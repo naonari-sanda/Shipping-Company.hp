@@ -1,0 +1,912 @@
+@charset "UTF-8";
+/* CSS Document */
+/********************************** 別ファイル ****************************/
+/********************************** 変数 ****************************/
+/********************************** @mixin ****************************/
+/******************************************** 幅指定*/
+/******************************************** 真ん中*/
+/********************************** メイン ****************************/
+#info-page .inner h2 {
+  text-align: center;
+}
+
+#info-page .inner iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+#info-page table {
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 10rem;
+}
+
+#info-page table th {
+  color: #141e82;
+  font-weight: bold;
+  text-align: left;
+  width: 30%;
+  border-bottom: 1px solid #444444;
+  padding: 3rem 5rem;
+}
+
+#info-page table td {
+  font-weight: lighter;
+  letter-spacing: .2rem;
+  width: 70%;
+  border-bottom: 1px solid #444444;
+  padding: 3rem 5rem;
+}
+
+/********************************** 変数 ****************************/
+/********************************** @mixin ****************************/
+/******************************************** 幅指定*/
+/******************************************** 真ん中*/
+/********************************** メイン ****************************/
+#contact-page {
+  padding-bottom: 0;
+}
+
+#contact-page table {
+  width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 10rem;
+}
+
+#contact-page table th {
+  color: #141e82;
+  font-weight: bold;
+  text-align: left;
+  width: 30%;
+  border: 2px solid #ebebeb;
+  padding: 3rem 2rem;
+  background-color: #fafafa;
+}
+
+#contact-page table th label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-page table th span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 2.2rem;
+  font-size: 1.4rem;
+  background-color: #c30202;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+#contact-page table td {
+  font-weight: lighter;
+  letter-spacing: .2rem;
+  width: 70%;
+  border: 1px solid #ebebeb;
+  padding: 3rem 5rem;
+}
+
+#contact-page table td input,
+#contact-page table td textarea,
+#contact-page table td select {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  border: 2px solid #ebebeb;
+}
+
+#contact-page table td input:focus {
+  border: 3px solid #141e82;
+}
+
+#contact-page table td select:focus {
+  border: 3px solid #141e82;
+}
+
+#contact-page table td textarea:focus {
+  border: 3px solid #141e82;
+}
+
+/********************************** 変数 ****************************/
+/********************************** @mixin ****************************/
+/******************************************** 幅指定*/
+/******************************************** 真ん中*/
+/********************************** メイン ****************************/
+#vehicle-page {
+  padding-bottom: 0;
+}
+
+#vehicle-page h3 {
+  display: inline-block;
+  width: 8rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  letter-spacing: .1rem;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+#vehicle-page .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+#vehicle-page .group section {
+  width: 33.33333%;
+  width: calc(100% / 3);
+  padding: 3% 2%;
+}
+
+#vehicle-page .group section h4 {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #141e82;
+  padding: 0 8%;
+  margin-bottom: .5rem;
+}
+
+#vehicle-page .group section p {
+  font-size: 1.5rem;
+  padding: 0 8%;
+  line-height: 1.7;
+}
+
+/********************************** 変数 ****************************/
+/********************************** @mixin ****************************/
+/******************************************** 幅指定*/
+/******************************************** ボタン*/
+/******************************************** 真ん中*/
+#contact {
+  padding: 25rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .wrap {
+  width: 70%;
+  margin: 0 auto;
+  border: 3px solid #141e82;
+}
+
+#contact .wrap h3 {
+  background-color: #141e82;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/******************************************** コンタクトバナー*/
+#banner {
+  padding: 18rem 0 25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#banner .wrap {
+  width: 70%;
+  margin: 0 auto;
+  border: 3px solid #141e82;
+}
+
+#banner .wrap h3 {
+  background-color: #141e82;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.contact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 4rem;
+}
+
+.contact-inner .phone {
+  width: 60%;
+}
+
+.contact-inner .phone .number {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: .2rem;
+  color: #c30202;
+  line-height: 1;
+}
+
+.contact-inner .phone .line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #141e82;
+  margin: 1rem 0;
+}
+
+.contact-inner .phone p {
+  line-height: 1;
+}
+
+.contact-inner .btn-box {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+.contact-inner .btn-box a {
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+  border-radius: 1.5rem;
+  line-height: 3.5;
+  color: #fff;
+  text-align: center;
+  background-color: #141e82;
+}
+
+.contact-inner .btn-box a:hover {
+  background-color: #616ee4;
+}
+
+.contact-inner .btn-box a i {
+  margin-right: .3rem;
+}
+
+/********************************** 初期設定****************************/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.7rem;
+  font-weight: normal;
+  letter-spacing: rem;
+  line-height: 2;
+  font-family: 'Noto Sans JP', sans-serif, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #FFFFFF;
+  word-wrap: break-all;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: #141e82;
+  letter-spacing: .5rem;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 12rem;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 2.1rem;
+  letter-spacing: .2rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: rem;
+  color: #444444;
+}
+
+h4 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: rem;
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #444444;
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+}
+
+article {
+  padding: 10rem 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 25rem;
+  background-color: #141e82;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  line-height: 6rem;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin-top: 10rem;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn i {
+  position: relative;
+  right: -15%;
+  line-height: rem;
+}
+
+.footer-btn {
+  display: block;
+  position: relative;
+  margin-left: 0;
+  border: 3px solid #fff;
+  text-align: center;
+  line-height: 3;
+  color: #fff;
+}
+
+.action_b:hover {
+  background-color: #616ee4;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.fa-phone-volume {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-transform: translateY("1rem");
+          transform: translateY("1rem");
+}
+
+/******************************************** ヘッダー*/
+header {
+  height: 13.7rem;
+}
+
+header .top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 3rem;
+  height: 9rem;
+}
+
+header .top-header h1 {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-header h1 img {
+  width: 27rem;
+}
+
+header .top-header h1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+  height: auto;
+}
+
+header .top-header h1 p {
+  font-size: 1.3rem;
+  color: #444444;
+}
+
+header .top-header .header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top-header .header-info .header-contact {
+  text-align: right;
+}
+
+header .top-header .header-info .header-contact .phone {
+  font-size: 2.5rem;
+  color: #c30202;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+header .top-header .header-info .header-contact .hours {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding-top: .5rem;
+}
+
+header .top-header .header-info a {
+  height: 5rem;
+  width: 13rem;
+  background-color: #141e82;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header .top-header .header-info a:hover {
+  background-color: #616ee4;
+}
+
+header .top-header .header-info a i {
+  margin-right: 0.3rem;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav {
+  background-color: #141e82;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav ul li + li {
+  border-left: none;
+}
+
+.nav ul li {
+  text-align: center;
+  width: 20%;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.nav ul li a {
+  display: block;
+  width: 100%;
+  height: 4.7rem;
+  line-height: 4.7rem;
+  color: #fff;
+  letter-spacing: .4rem;
+}
+
+/******************************************** メインヴィジュアル*/
+.mainvisual {
+  height: 80rem;
+  position: relative;
+}
+
+.mainvisual img {
+  position: absolute;
+  right: 0%;
+  top: 40%;
+  width: 40rem;
+}
+
+/******************************************** 廣垣急送について*/
+#info .map {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url("/img/info.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+
+#info .map p {
+  text-align: center;
+  line-height: 2.5;
+}
+
+/******************************************** 一般配送*/
+#service {
+  background-color: #f8f8f8;
+}
+
+#service .inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#service .inner ul li {
+  background-color: #fff;
+  width: 25%;
+  padding-bottom: 2rem;
+}
+
+#service .inner ul li img {
+  width: 100%;
+}
+
+#service .inner ul li h3 {
+  text-align: left;
+  color: #141e82;
+  line-height: 1.3;
+  margin: 2rem 5% 2rem;
+  padding-left: 1rem;
+  border-left: 5px solid #141e82;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#service .inner ul li p {
+  line-height: 1.8;
+  margin: 0 5%;
+  font-size: 1.5rem;
+  word-break: break-all;
+}
+
+/******************************************** 関連事業*/
+#other .business {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#other .business section {
+  position: relative;
+  width: 37rem;
+  height: 45rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#other .business section h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+#other .business section p {
+  display: block;
+  text-align: center;
+  margin-bottom: auto;
+  color: #fff;
+}
+
+#other .business section a {
+  position: relative;
+  display: block;
+  background-color: #141e82;
+  width: 23rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #141e82;
+  line-height: 5.5rem;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #f8f8f8;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#other .business section a i {
+  position: relative;
+  right: -15%;
+}
+
+#other .business section a:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #616ee4;
+}
+
+#other .business .storehouse {
+  background-image: url("../img/storehouse.png");
+}
+
+#other .business .movinghouse {
+  background-image: url("../img/moving.png");
+}
+
+/******************************************** 車両一覧*/
+#vehicle {
+  background-color: #f8f8f8;
+}
+
+#vehicle .slider .slider-vehicle {
+  width: 28rem;
+  height: 35rem;
+  background-color: #fff;
+  margin: 7rem 4rem;
+}
+
+#vehicle .slider .slider-vehicle h4 {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #141e82;
+  padding: 0 8%;
+  margin-bottom: .5rem;
+}
+
+#vehicle .slider .slider-vehicle h4 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 2.2rem;
+  line-height: 0;
+  border-radius: 1rem;
+  background-color: #141e82;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+
+#vehicle .slider .slider-vehicle p {
+  font-size: 1.5rem;
+  padding: 0 8%;
+  line-height: 1.7;
+}
+
+/******************************************** コンタクト*/
+#contact {
+  padding: 25rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact .wrap {
+  width: 70%;
+  margin: 0 auto;
+  border: 3px solid #141e82;
+}
+
+#contact .wrap h3 {
+  background-color: #141e82;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.contact-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem 4rem;
+}
+
+.contact-inner .phone {
+  width: 60%;
+}
+
+.contact-inner .phone .number {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: .2rem;
+  color: #c30202;
+  line-height: 1;
+}
+
+.contact-inner .phone .line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #141e82;
+  margin: 1rem 0;
+}
+
+.contact-inner .phone p {
+  line-height: 1;
+}
+
+.contact-inner .btn-box {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+.contact-inner .btn-box a {
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+  border-radius: 1.5rem;
+  line-height: 3.5;
+  color: #fff;
+  text-align: center;
+  background-color: #141e82;
+}
+
+.contact-inner .btn-box a:hover {
+  background-color: #616ee4;
+}
+
+.contact-inner .btn-box a i {
+  margin-right: .3rem;
+}
+
+/******************************************** フッター*/
+footer {
+  background-color: #141e82;
+  padding: 8rem 8rem 2rem;
+}
+
+footer .footer-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .copy {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-inner {
+  margin-bottom: 2rem;
+}
+
+.footer-inner .infomation {
+  width: 20%;
+  color: #fff;
+  text-align: left;
+}
+
+.footer-inner .infomation h4 {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1.5;
+  border-bottom: 3px solid #fff;
+  text-align-last: left;
+  margin-bottom: 1rem;
+}
+
+.footer-inner .infomation p {
+  color: #fff;
+  white-space: nowrap;
+  height: 1.8em;
+}
+
+.footer-inner .infomation .footer-btn {
+  width: 18rem;
+  margin-top: 3rem;
+  margin-left: 0;
+  border: 3px solid #fff;
+  text-align: center;
+  line-height: 3;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-inner .infomation .footer-btn i {
+  padding-right: 1rem;
+}
+
+.footer-inner .footer-right {
+  width: 80%;
+  position: relative;
+}
+
+.footer-inner .footer-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10%;
+}
+
+.footer-inner .footer-right ul a {
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-inner .footer-right ul a:hover {
+  color: #616ee4;
+}
+
+.footer-inner .footer-right ul a i {
+  margin-right: .3rem;
+}
+/*# sourceMappingURL=style.css.map */

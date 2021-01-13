@@ -1,0 +1,76 @@
+/********************************** 変数 ****************************/
+$main: #141e82;
+$red: #c30202;
+$gray: #f8f8f8;
+$text: #444444;
+$hover: #616ee4;
+
+$shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+/********************************** @mixin ****************************/
+
+/******************************************** 幅指定*/
+
+
+@mixin base {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/******************************************** 真ん中*/
+
+@mixin center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********************************** メイン ****************************/
+
+#info-page {
+
+    .inner {
+
+        h2 {
+            text-align: center;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+
+#info-page {
+
+    table {
+
+        max-width: 800px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 10rem;
+
+        th {
+            color: $main;
+            font-weight: bold;
+            text-align: left;
+            width: 30%;
+            border-bottom: 1px solid #444444;
+            padding: 3rem 5rem;
+        }
+
+        td {
+            font-weight: lighter;
+            letter-spacing: .2rem;
+            width: 70%;
+            border-bottom: 1px solid #444444;
+            padding: 3rem 5rem;
+        }
+    }
+
+}

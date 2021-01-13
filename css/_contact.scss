@@ -1,0 +1,99 @@
+/********************************** 変数 ****************************/
+$main: #141e82;
+$red: #c30202;
+$gray: #f8f8f8;
+$text: #444444;
+$hover: #616ee4;
+
+$shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+/********************************** @mixin ****************************/
+
+/******************************************** 幅指定*/
+
+
+@mixin base {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/******************************************** 真ん中*/
+
+@mixin center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********************************** メイン ****************************/
+
+#contact-page {
+
+    padding-bottom: 0;
+
+    table {
+
+        width: 900px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 10rem;
+
+        th {
+            color: $main;
+            font-weight: bold;
+            text-align: left;
+            width: 30%;
+            border: 2px solid #ebebeb;
+            padding: 3rem 2rem;
+            background-color: #fafafa;
+
+            label {
+                @include center;
+
+            }
+
+            span {
+                @include center;
+                width: 4rem;
+                height: 2.2rem;
+                font-size: 1.4rem;
+                background-color: $red;
+                color: #fff;
+                margin-left: 1rem;
+            }
+        }
+
+        td {
+            font-weight: lighter;
+            letter-spacing: .2rem;
+            width: 70%;
+            border: 1px solid #ebebeb;
+            padding: 3rem 5rem;
+
+            input,
+            textarea,
+            select {
+                width: 100%;
+                padding: 1.5rem 2rem;
+                border-radius: 0.5rem;
+                background-color: #fafafa;
+                border: 2px solid #ebebeb;
+            }
+
+            input:focus {
+                border: 3px solid $main;
+            }
+
+            select:focus {
+                border: 3px solid $main;
+            }
+
+            textarea:focus {
+                border: 3px solid $main;
+            }
+        }
+    }
+
+}
